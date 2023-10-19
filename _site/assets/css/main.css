@@ -5,7 +5,7 @@ body {
 }
 
 article {
-  max-width: 600px;
+  max-width: 8.27in;
   padding: 40px;
   background: white;
   box-shadow: 0 0 10px gray;
@@ -22,26 +22,6 @@ h2 {
   font-size: 1.5em;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: solid 1px;
-}
-
-.box {
-  flex: 1;
-  margin: 10px;
-  padding: 2px;
-}
-
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-  .box ul {
-    padding: 0;
-  }
-}
 a {
   text-decoration: none;
 }
@@ -49,6 +29,56 @@ a {
 svg {
   padding-right: 5px;
   vertical-align: middle;
+}
+
+dd {
+  margin-inline-start: 5px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px;
+}
+
+header div {
+  flex: 1;
+  margin: 10px;
+  padding: 2px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  header div ul {
+    padding: 0;
+  }
+  article {
+    padding: 30px;
+    background: white;
+    box-shadow: none;
+    margin: 0px auto;
+  }
+}
+footer {
+  border-top: solid 1px;
+  margin-top: 50px;
+}
+
+/* print */
+@media print {
+  body {
+    background: white;
+  }
+  article {
+    padding: 10px;
+    background: white;
+    box-shadow: none;
+  }
+  footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
