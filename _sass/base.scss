@@ -42,6 +42,7 @@ h2 {
 .container {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: solid 1px;
 }
 
 .box {
@@ -55,4 +56,15 @@ h2 {
   .container {
       flex-direction: column;
   }
+  .box ul {
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+svg {
+  padding-right: 5px;
+  vertical-align: middle;
 }
