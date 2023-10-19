@@ -1,21 +1,14 @@
 ---
 layout: default
-title: "Happy Jekylling!"
 ---
-<article>
-    <h1> {{ site.name }}</h1>
+
+<article class="job">
+  {%- include header.html -%}
+   
+    <hr>
   
-
-     
-    <span class="icon-star"></span>
-    <i class="x"></i>
-    <i class="github"></i>
-    <i class="mobile"></i>
-
-
-
     <h2>Your job</h2>
-    <div>
+    <div class="job-description">
       <p>As a Group Leader, you are responsible for the setup and the operational leadership of projects in the French part of Switzerland. Your responsibilities include:</p>
       <ul>
         <li>Manage large scale projects (&gt; 1 Million CHF) and/or supervise project portfolio in a profitable way and with customer satisfaction</li>
@@ -28,8 +21,8 @@ title: "Happy Jekylling!"
       </ul>
     </div>
   
-    <h2>Our offer</h2>
-    <div>
+    <h2 class="job-benefits-title">Our offer</h2>
+    <div class="job-benefits">
       <ul>
         <li>A pleasant working environment in an experienced, motivated and friendly team</li>
         <li>An organization with flat hierarchies and collaborations across business departments</li>
