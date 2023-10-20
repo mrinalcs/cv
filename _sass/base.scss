@@ -25,6 +25,7 @@ h1 {
 }
 h2 {
   font-size: 1.5em;
+  margin-bottom: 0;
 }
 
 a {
@@ -33,6 +34,9 @@ a {
 svg {
   padding-right: 5px;
   vertical-align: middle;
+}
+dt{
+  font-weight: bold;
 }
 
 dd {
@@ -46,25 +50,24 @@ dd {
 
 
 header {
-  display: flex;
-  flex-wrap: wrap;
   border-bottom: solid 1px;
 }
 
 header div {
-  flex: 1;
   margin-bottom: 10px;
   padding: 2px;
   
+}
+
+header div ul {
+  padding: 0;
 }
 
 @media (max-width: 600px) {
   header {
       flex-direction: column;
   }
-  header div ul {
-    padding: 0;
-  }
+  
   article {
     padding: 30px;
     background: white;
@@ -92,5 +95,31 @@ footer {
   }
   footer {
     display: none;
+  }
+}
+
+
+
+
+
+
+/* add */
+
+.container {
+  display: flex;
+}
+
+.left {
+  flex: 3;
+}
+
+.right {
+  flex: 2;
+}
+
+/* Media query for small screens */
+@media (max-width: 708px) {
+  .container {
+    flex-direction: column;
   }
 }

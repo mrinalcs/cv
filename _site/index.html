@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="/cv/assets/css/main.css">
   </head>
   <body>
-    <article><header>
-    <div>
+    <article><header class="container">
+    <div class="left">
         <h1 style="margin: 0;">Mrinal Chandra Sarkar</h1>
         <p style="margin: 0;">Statistics Graduate | Data Analyst</p>
         
     </div>
-    <div>
+    <div class="right">
         <ul style="list-style: none; margin: 0;">
             <li><svg width="16" height="16" fill="currentColor"><use xlink:href="#phone-icon"/></svg><a href="tel:+919593457937">(959) 345-7937</a></li>
             <li><svg width="16" height="16" fill="currentColor"><use xlink:href="#email-icon"/></svg><a href="mailto:mrinalvbu@gmail.com">mrinalvbu@gmail.com</a></li>
@@ -52,53 +52,84 @@
         <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
       </symbol>
 
-  </svg><h2>Education</h2>
-    <div >
-      <p>While my academic background is rooted in statistics, I've also developed a deep interest in web development. This dynamic field, with its blend of creativity and technical skills, has captivated me.</p>
-      <ul>
-        <li>
-          <dl>
-            <dt>Visva Bharati, Shantiniketan</dt>
-            <dd>Bachelor of Science in Statistics</dd>
-            <dd>2020 - 2023</dd>
-            <dd>Grade: A+</dd>
-          </dl>          
-        </li>
-        <li>
-          <dl>
-            <dt>Visva Bharati, Shantiniketan</dt>
-            <dd>Master of Science in Statistics</dd>
-            <dd>2023 - Present</dd>
-          </dl> 
-        </li>
-      </ul>
+  </svg><div class="container">
+    <div class="right">
+      <h2>Education</h2>
+      <div>
+        <ul style="list-style: none;padding: 0;">
+          <li>
+            <dl>
+              <dt>Visva Bharati, Shantiniketan</dt>
+              <dd>Bachelor of Science in Statistics</dd>
+              <dd>2020 - 2023</dd>
+              <dd>Grade: A+</dd>
+            </dl>          
+          </li>
+          <li>
+            <dl>
+              <dt>Visva Bharati, Shantiniketan</dt>
+              <dd>Master of Science in Statistics</dd>
+              <dd>2023 - Present</dd>
+            </dl> 
+          </li>
+        </ul>
+      </div>
+
+      <h2>Skills</h2>
+      <div>
+        <h4>Programming language</h4>
+        <ul>
+          <li>Python (Programming Language)</li>
+          <li>R (Programming Language)</li>
+          <li>C Programming</li>
+          <li>PHP (HTML, CSS)</li>
+        </ul>
+        <h4>Tools</h4>
+        <ul>
+          <li>Microsoft Excel</li>
+          <li>Latex (MikText,Mathjs,Overleaf)</li>
+          <li>R Studio</li>
+          <li title="A Next-Generation Notebook Interface">JupyterLab</li>
+        </ul>
+        <h2>Interests</h2>
+        <p><span>Sci-fi movies</span> &bull; <span>Web development</span> &bull; <span>Mobile photography</span></p>
+      </div>
     </div>
-  
-    <h2>Skills</h2>
-    <div>
-      <ul>
-        <li>Python (Programming Language)</li>
-        <li>R (Programming Language)</li>
-        <li>Basic C Programming</li>
-        <li>Statistical Data Analysis</li>
-        <li>Microsoft Excel</li>
-        <li>Latex Mathematical Writting (MikText,Mathjs)</li>
-        <li><a target="_blank" href="https://github.com/mrinalcs/wp-stat">WordPress Theme Development</a></li>
-      </ul>
+    <div class="left">
+      <h2>Projects</h2>
+      <div  id="projects">
+        <ul>
+          <li><a href="https://github.com/mrinalcs/india-literacy">A look at literacy in India using R , descriptive statistics , analysis on literacy rate , census 2011.</a></li>
+          <li><a href="https://github.com/mrinalcs/body-performance">Statistical analysis on body performance , Basic analysis on different factors and classes.</a></li>
+          <li><a href="https://github.com/mrinalcs/wp-stat">A website with file-based content management and an admin panel for simple updates, without database. (PHP)</a></li>
+          <li><a href="https://www.overleaf.com/project/638dfef793e6c90ff7265cbd">Linear model Latex writtings (Overleaf)</a></li>
+          <li><a href="https://github.com/mrinalcs/vbstat">Handouts and Notes BSc Statistics VisvaBharati along with dynamic listing and template (Jekyll,Bootstrap)</a></li>
+        </ul>
+        
+      </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-    <h2>Projects</h2>
-    <div  id="projects">
-      <ul>
-        <li><a href="https://github.com/mrinalcs/india-literacy">A look at literacy in India using R | Descriptive statistics | Analysis on Literacy rate | Census 2011</a></li>
-        <li><a href="https://github.com/mrinalcs/body-performance">Statistical Analysis on Body Performance | Basic analysis on different factors and classes</a></li>
-        <li><a href="https://github.com/mrinalcs/wp-stat">A website with file-based content management and an admin panel for simple updates, without database.</a></li>
-        <li>wp-stat: A wordpress theme for Statistical writting</li>
-      </ul>
+
   
-      <p>Check my projects uploaded to github reposetories which are pinned in my github profile</p>
-      
-    </div>
+    
+
+  
+    
+
   
     <div>
       <h2>Language</h2>
@@ -108,8 +139,17 @@
           <span>हिंदी (Hindi)</span>
       </div>
     </div><footer>
-    <p>&copy; 2023 Mrinal Chandra Sarkar</p>
+    <p>&copy; 2023 Mrinal Chandra Sarkar</p> <input style="float: right;" type="button" value="Print this page" onClick="window.print()">
 </footer></article>
   
+
+
+
+
+
+ 
+
+ 
+
   </body>
 </html>
